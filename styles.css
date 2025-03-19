@@ -1,4 +1,6 @@
-    
+body{
+    overflow-x: hidden;
+}   
 nav{
     display: flex;
     justify-content: space-between;
@@ -23,7 +25,7 @@ nav{
 }
 
 .foundationbackgrouds{
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #7E88CE;
     color: white;
 }
@@ -55,7 +57,8 @@ nav{
     font-weight: 600;
 }
 .stroke-text{
-    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: white;
 }
@@ -72,11 +75,14 @@ nav{
     background-color: white;
     border-radius: 20px;
 }
+.bg-charcoal{
+    background: #2c3943;;
+}
+.border-radius-top{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
-/*Custom styles for pagination*/
-/* .pagination-container{
-    background-color: red;
-} */
 
 .carousel-indicators{
     position: absolute;
@@ -105,9 +111,69 @@ nav{
     background-color: rgba(247, 243, 243, 0.9);
 }
 
+.carousel-item{
+    justify-content: center;
+}
+
+.scrolling-text-container{
+    white-space: nowrap;
+    overflow: hidden;
+    position:;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.scrolling-texts{
+    font-size: 80px;
+    white-space: nowrap;
+    animation: scroll-text 50s linear infinite;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #2c3943;
+}
+
+.bg-charcoal{
+    background: #2c3943;
+}
+.d-block{
+    border-radius: 10px;
+    justify-self: center;
+    padding-top: 10px;
+}
+
+.recentworks{
+    width: 100%;
+    justify-content: center;
+}
+
+.recentworks h2{
+    width: 100%;
+    text-align: center !important;
+}
+
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.text-lighter-30{
+    color: rgba(44, 57, 67, 0.3);;
+}
+
+
+
 @media only screen and (max-width:1200px){
     .client-box img{
         width: 140px;
         height: 50px;
+    }
+    .body{
+        overflow-x: hidden;
     }
 }
